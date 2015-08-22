@@ -1,0 +1,219 @@
+﻿* {
+    margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+body {
+    font-family: arial, sans-serif;
+	padding: 0.4em;
+	background: rgb(255,50,50);
+}
+
+h2, h3, h4 {
+    font-size: 1.5em;
+	color: black;
+	background: cyan;
+	padding: 0.3em;
+	text-align: center;
+	margin: 0.5em 0;
+}
+
+p, address {
+    font-size: 1.2em;
+}
+
+ul a {
+	text-align: center;
+	font-size: 1.2em;
+	padding: 0.7em;
+	display: block;
+}
+
+.list {
+    margin: 0.5em 0 0.5em 0.5em;
+}
+
+.list li {
+    list-style: disc inside;
+	margin: 0.4em 0;
+	font-size: 1.2em;
+}
+
+/* --------------- Dispositivos móveis - estilo padrão ----------------- */
+
+/* --------------- header da página --------------- */
+
+header {
+    margin-bottom: 0.5em;
+}
+
+header h1 {
+    background-image: url(worldjs.jpg);
+	background-size: 100% 100%; 
+	padding: 1em 0;
+	text-align: center;
+	text-shadow: 0 0 8px white;
+	font-size: 2em;
+	color: red;
+	border: solid 0.05em black;
+	margin-bottom: 0.2em;
+}
+
+header li {
+    list-style: none;
+}
+
+header a:link {
+	background: green;
+	color: white;
+	text-decoration: none;
+    border-top: 0.1em solid white;
+}
+
+header a:visited {
+    color: white;
+}
+
+header a:hover {
+    background: yellow;
+    border-top: 0.1em solid white;
+	color: red;
+}
+
+/* -------------- section da página -------------- */
+
+section {
+    background: rgb(150,255,240);
+	padding: 0.4em 0.2em;
+	text-align: justify;
+}
+
+/* ------------ aside da página ----------- */
+
+.others {
+    padding: 0 2%;
+	height: 4.5em;
+}
+
+.others li, .others a {
+	padding: 0.7em 0;
+}
+
+.others li {
+	float: left;
+	width: 30%;
+	margin-left: 2.5%;
+}
+
+.others a {
+    display: block;
+	width: 100%;
+}
+
+/* ----------- links do aside e footer ---------- */
+
+.others li, #footer li {
+    list-style: none;
+}
+
+.others a:link, #footer a:link {
+    color: blue;
+	background: rgb(255,128,0);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.others a:visited , #footer a:visited  {
+	color: blue;
+}
+
+.others a:hover, #footer a:hover  {
+	color: red;
+	background: rgb(217,109,0);
+}
+
+#footer a:link {
+    margin: 3% 0;
+}
+
+/* --------------- Dispositivos com largura mínima de 35ems ---------------- */
+
+@media only screen and (min-width: 35em) and (max-width: 68.75em){
+
+header li:first-child{
+    width: 99%;
+}    
+
+header li {
+    display: inline-block;
+	width: 49%;
+	margin: 0.2em 0;
+}
+	
+}
+
+@media only screen and (min-width: 50.9375em) {
+
+header h1 {
+	padding: 2.5em;
+    background-image: url(js_1.jpg), url(worldjs.jpg), url(js_2.png);
+	background-size: 20% 100%, 60% 100%, 20% 100%; 
+	background-repeat: no-repeat;
+	background-position: 0% 0%, 20% 0%, 80% 0%;
+	background-origin: border-box; 
+}
+
+#footer ul {
+    height: 6em;
+}
+
+#footer li {
+    float: left; 
+	width: 30%;
+	margin: 0;
+	margin-left: 2.5%;
+}
+
+}
+
+@media only screen and (min-width: 68.75em){
+
+body {
+    padding: 2em;
+}
+
+header ul {
+    height: 3.13em;
+}
+
+header li {
+	width: 19%;
+	margin: 0;
+	float: left;
+}
+
+header li + li {
+	margin-left: 1.25%;
+}
+
+footer ul {
+	height: 3.125em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
